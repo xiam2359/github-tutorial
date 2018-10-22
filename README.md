@@ -46,5 +46,4 @@ tips: use `git status` to check to make sure if you commit changes of the file o
 ---
 ## Rolling Back Changes
 #### Undo Edits
-First you have to type git status.
-
+Before you undo any changes, you have to fork the 
