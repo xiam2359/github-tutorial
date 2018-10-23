@@ -36,7 +36,16 @@ First, set up a github account.
 To make a repository, you have to start from your worksapce. Therefore, make sure you're `username:~/workspace`.  
 1) type `mkdir "name of your repository"` 
 2) After you created your repository, make sure you always `cd` into your repository if you're going to work on it.  
-3) Then type `touch README.md`, this will be the file you 
+3) Type `git init` to initialize it.
+4) Now you can type `touch README.md` to create a file, README.md is the file you created.
+      - Now you can type anything or any of your work here.  
+5) So to save your work, you are going to first type `git add .` , then `git commit -m "you message"` to mark down notes to remind your self what you have done the next time you come back to work on it.  
+##### Next you switch your tab to github
+6) Find the plus sign (+) at the top-right corner and click on it.
+      - click new repository
+7) name your repository the same one sa the one you name on Cloud9
+8) After that, just click create repository.
+9) 
 
 ---
 ## Workflow & Commands
