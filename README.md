@@ -33,6 +33,12 @@ If you don't do the following to create a repository:
 
 ---
 ## Workflow & Commands
+Before you start do your workflow, you need t ounderstand what the codes below means  
+- `git add .`-add file that are modified to the stage, not rename or deleted.  
+- `git commit -m ""`-messages should be place inside of "", it is where you can take notes to tell yourself what have you change before you push it. Therefore, on github, the message will show to remind you whenever you are going back to work.  
+- `git push`- send you saved command to github which is where you store your changes.
+- `git status`- tells you whether your file is modified or not, and tells you what's going on generally. And when you did something wrong, it also tell you clues how to fix it.  
+#### Now let's get on working!
 After you've completed your repository setup, you will be able to work on your file.
 1. Create a file
 2. When you want to save your work that you've complete so far, you will first makesure you are `cd` into the repository where your file is on.
