@@ -45,7 +45,8 @@ To make a repository, you have to start from your worksapce. Therefore, make sur
       - click new repository
 7) name your repository the same one sa the one you name on Cloud9
 8) After that, just click create repository.
-9) 
+9) Then make sure you are on the SSH mode instead of HTTPS  
+        - You will then copy and paste each command under "...or push and existing repository from the command line" one by one.
 
 ---
 ## Workflow & Commands
