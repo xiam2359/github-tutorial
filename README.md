@@ -19,17 +19,24 @@ First, set up a github account.
 - To make a github account you need a email(if you don't have one you need to make one)
 2) _Once you are on the site, you will first click **sign up**_
 3) _Then create your username and password, type in you email address._
-4) _After you fill them out, click **create an account**)_
+4) _After you fill them out, click **create an account**_
 
+#### Then create SSH key between github and c9
+1) First click on the profile icon on the top right corner
+2) Then click setting
+3) Under personal seetings, click on SSH-GPG
+4) Type "Cloud9" in the title.  
+##### After that, you open your cloud9 tab.
+5) On the top right corner of the tab, you see the gear icon, so click on it. 
+6) Under account, you are going to find "SSH Keys" and click on it.
+7) Copy and paste your second SSH keys into github
+#### And you're done!
 ---
 ## Repository Setup
-First you have to have a repository that you've already created.
-If you don't do the following to create a repository:
-1. mkdir {name of your repository}
-
-1. If you're at workspace, make sure you get into the repository before you set up
-2. what you going to do is type `cd` [name of your repository]
-3. 
+To make a repository, you have to start from your worksapce. Therefore, make sure you're `username:~/workspace`.  
+1) type `mkdir "name of your repository"` 
+2) After you created your repository, make sure you always `cd` into your repository if you're going to work on it.  
+3) Then type `touch README.md`, this will be the file you 
 
 ---
 ## Workflow & Commands
