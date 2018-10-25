@@ -70,6 +70,9 @@ tips: use `git status` to check to make sure if you commit changes of the file o
 
 ---
 ## Rolling Back Changes
+#### Undo Edits  
+Let say you you type a ad  a big block of texts that you now wanted to delete. Instead of using the backspace tab, you can delete this by using command. 
+- First you'll 
 #### Undoing Add
 - So after you've git add your new changes, type git status.
      -Yup, you'll have something like the following:  
