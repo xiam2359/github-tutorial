@@ -70,8 +70,23 @@ tips: use `git status` to check to make sure if you commit changes of the file o
 
 ---
 ## Rolling Back Changes
-#### Undo Edits
-Before you undo any changes, you have to fork the 
+#### Undoing Add
+- So after you've git add your new changes, type git status.
+     -Yup, you'll have something like the following:  
+      `Changes to be committed: (use "git reset HEAD <file>..." to unstage)  
+             Modified: <your file name>`
+
+- To undo add, you will follow what it said in the parentheses which is use `git reset HEAD <file>...`  
+ 
+OK! Now try it yourself! What do you see now?  
+Do you have the following?  
+`Changese not staged for commit: (use "git add <file>..." to update what will be commited) (use "giy checkout -- <file>.." to discard in working directory)
+        Modified: README.md`   
+with "modified: README.md" red?  
+If you do, Fantastic! You've learn how to undo add!
+
+#### Undo commit 
+
 
 <!--Great Job :) You were very thorough and direct with your explainations which is good for understanding. Make sure to explain more of the why with the how and the what-->
 
