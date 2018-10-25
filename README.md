@@ -21,14 +21,14 @@ First, set up a github account.
 3) _Then create your username and password, type in you email address._
 4) _After you fill them out, click **create an account**_
 
-#### Then create SSH key between github and c9
+#### Then create SSH key between github and c9  
 1) First click on the profile icon on the top right corner
 2) Then click setting
 3) Under personal seetings, click on SSH-GPG
 4) Type "Cloud9" in the title.  
 <!--make sure to explain why do we use SSH key instead of HTTPS key-->
-##### After that, you open your cloud9 tab.
-5) On the top right corner of the tab, you see the gear icon, so click on it. 
+ 
+5) After that, open your cloud9 tab. On the top right corner of the tab, you see the gear icon, so click on it.  
 6) Under account, you are going to find "SSH Keys" and click on it.
 7) Copy and paste your second SSH keys into github
 #### And you're done!
@@ -56,8 +56,9 @@ Before you start do your workflow, you need t ounderstand what the codes below m
 - `git commit -m ""`-messages should be place inside of "", it is where you can take notes to tell yourself what have you change before you push it. Therefore, on github, the message will show to remind you whenever you are going back to work.  
 - `git push`- send you saved command to github which is where you store your changes. 
 <!--explain why you type `git push -u origin master` first and then `git push`-->
-- `git status`- tells you whether your file is modified or not, and tells you what's going on generally. And when you did something wrong, it also tell you clues how to fix it. <!--I don't think it tells you whether you did something wrong or not-->
+- `git status` - tells you whether your file is modified or not, and tells you what's going on generally. And when you did something wrong, it also tell you clues how to fix it. <!--I don't think it tells you whether you did something wrong or not-->
 #### Now let's get on working!
+
 After you've completed your repository setup, you will be able to work on your file.
 1. Create a file
 2. When you want to save your work that you've complete so far, you will first makesure you are `cd` into the repository where your file is on.
@@ -71,8 +72,14 @@ tips: use `git status` to check to make sure if you commit changes of the file o
 ---
 ## Rolling Back Changes
 #### Undo Edits  
-Let say you you type a ad  a big block of texts that you now wanted to delete. Instead of using the backspace tab, you can delete this by using command. 
-- First you'll 
+Let say you typed a big block of texts that you now wanted to delete, or even if you want to delete stuff here and there. Instead of using the backspace tab, you can delete this by using commands. 
+- First you'll have to type git status, Do you someting like the following:  
+     `Changes not staged for commit:  
+         (use "git add <file>..." to update what will be committed)
+         (use "git checkout -- <file>..." to discard changes in working directory)
+                  modified:   README.md` [notice "modified: README.md" is red, this means you did not add your changes to the stage, this is be for you add your changes to the stage]  
+-Then use type`git checkout -- <file>`, this will discard changes you recently made.
+
 #### Undoing Add
 - So after you've git add your new changes, type git status.
      -Yup, you'll have something like the following:  
