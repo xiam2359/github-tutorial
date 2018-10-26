@@ -35,7 +35,7 @@ First, set up a github account.
 
 - The reason why choosing SSH over http is because Cloud9 is a platform with SSH formated workspace. 
 - And when you use http, it will ask for you github username and password every time you want to store you work on github.
-- 
+
 #### And you're done!
 ---
 ## Repository Setup
@@ -62,7 +62,7 @@ Before you start do your workflow, you need t ounderstand what the codes below m
 - `git add .`-add file that are modified to the stage, not renamed or deleted.  
 - `git commit -m ""`-messages should be place inside of "", it is where you can take notes to tell yourself what have you change before you push it. Therefore, on github, the message will show to remind you whenever you are going back to work.  
 - `git push`- send you saved command to github which is where you store your changes. 
-<!--explain why you type `git push -u origin master` first and then `git push`-->
+  
 - `git status` - tells you whether your file is modified or not, and tells you what's going on generally. And when you did something wrong, it also tell you clues how to fix it. <!--I don't think it tells you whether you did something wrong or not-->
 #### Now let's get on working!
 
