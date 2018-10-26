@@ -4,7 +4,8 @@ _by Xiaoqing(Mandy) Mei_
 
 ---
 ## Git vs. GitHub
-#### Git is where you take a screen shot of yout work.
+#### Git     
+is known as the version control that keeps a snapshot of your work. In other word, it record and stores your code.
 #### Github is where you: 
 - a space where you can store your code 
 - help track changes
@@ -96,7 +97,16 @@ with "modified: README.md" red?
 If you do, Fantastic! You've learn how to undo add!
 
 #### Undo commit 
+To **undo commit** you use `git reset --soft HEAD~1`!  
+For example, let say you commited an message, but it's wrong and you want to go back and commit another message this is what you do:
+- Type `git reset --soft HEAD~1`, this will allow you to commit your new message again.   
+       -However, if you decided to add or change anything in the file, you will have to type `git add .` again to make sure your new changes are add to the stage before you can commit you new messages. Because if you check `git status`, it will show your file red which means you haven't modified it yet.
 
+Well~ if you want to undo commit and want to be able to edit you changes, you'll have to **undo commit and add**.
+- Type `git reset HEAD~1`, this command basically unstaged your changes. In other word, you will be able to edit your files, then type `git add .` and `git commit -m "messages"` to commit your new edits. However, this command wouldn't delete any of your previous info.
+
+Last but not least if you want to **undo commit, add , and edits**, Do the following:
+-type `git reset --hard HEAD~1`, this will basically delete whatever you have added to you file from your last commit.
 
 <!--Great Job :) You were very thorough and direct with your explainations which is good for understanding. Make sure to explain more of the why with the how and the what-->
 
