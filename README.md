@@ -4,8 +4,8 @@ _by Xiaoqing(Mandy) Mei_
 
 ---
 ## Git vs. GitHub
-#### Git     
-is known as the version control that keeps a snapshot of your work. In other word, it record and stores your code.
+#### Git       
+known as the version control that keeps a snapshot of your work. In other word, it records your code.
 #### Github is where you: 
 - a space where you can store your code 
 - help track changes
@@ -32,15 +32,21 @@ First, set up a github account.
 5) After that, open your cloud9 tab. On the top right corner of the tab, you see the gear icon, so click on it.  
 6) Under account, you are going to find "SSH Keys" and click on it.
 7) Copy and paste your second SSH keys into github
+
+- The reason why choosing SSH over http is because Cloud9 is a platform with SSH formated workspace. 
+- And when you use http, it will ask for you github username and password every time you want to store you work on github.
+- 
 #### And you're done!
 ---
 ## Repository Setup
 To make a repository, you have to start from your worksapce. Therefore, make sure you're in `username:~/workspace`.  
-1) type `mkdir "name of your repository"` 
+1) type `mkdir "name of your repository"` , `mkdir` mean create a new repository(directory).
 2) After you created your repository, make sure you always `cd` into your repository if you're going to work on it.  
 3) Type `git init` to initialize it.
+     -In case if you initialize at the worng repository. You can type `rm -rf .git`, this will basically undo the git initialize and will be back to its original.
+     -`rm -rf` is a command that means remove, usually use to remove empty directory(Repository).
 4) Now you can type `touch README.md` to create a file, README.md is the file you created.
-      - Now you can type anything or any of your work here.  
+      - Now you can type anything or any of your work here. `touch <filename>` mean creating a new file.
 5) So to save your work, you are going to first type `git add .` , then `git commit -m "your message"` to mark down notes to remind your self what you have done the next time you come back to work on it.  
 ##### Next you switch your tab to github
 6) Find the plus sign (+) at the top-right corner and click on it.
@@ -107,6 +113,7 @@ Well~ if you want to undo commit and want to be able to edit you changes, you'll
 
 Last but not least if you want to **undo commit, add , and edits**, Do the following:
 -type `git reset --hard HEAD~1`, this will basically delete whatever you have added to you file from your last commit.
+
 
 <!--Great Job :) You were very thorough and direct with your explainations which is good for understanding. Make sure to explain more of the why with the how and the what-->
 
